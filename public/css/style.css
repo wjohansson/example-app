@@ -1,0 +1,92 @@
+*{
+    color: white;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+body {
+    background-image: linear-gradient(to bottom right, rgba(15, 77, 15, 0.6), rgba(142, 187, 19, 0.6));
+    background-attachment: fixed;
+}    
+p{
+    font-size: 16px;
+}
+p::first-letter{
+    font-size: 20px;
+}
+label{
+    transition: color 0.4s;
+}
+label:hover{
+    color:rgba(0, 0, 0, 0.6);
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+select{
+    color: white;
+    background-color: rgba(78, 129, 62, 0.3);
+    font-size: 16px;
+    border: none;
+    border-radius: 10px 0px 10px 0px;
+    padding: 5px;
+    transition: color 0.4s, background-color 0.4s;
+}
+select:hover{
+    background-color: rgba(180, 248, 141, 0.6);
+    color: rgba(0, 0, 0, 0.623);
+}
+div{
+    width: 300px;
+    height: 45px;
+    transition: width 2s, background-color 2s;
+}
+.header {
+    background-color: rgba(114, 136, 130, 0.6);
+    margin-left: auto;
+    margin-right: auto;
+}
+.header:hover{
+    width: 400px;
+    background-color: rgba(218, 218, 218, 0.6);    
+}
+.button{
+    background-color: rgba(114, 136, 130, 0.6);
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: color 0.4s, background-color 0.4s;
+}
+.button:hover{
+    background-color: rgba(218, 218, 218, 0.6);
+    color: black;
+}
+input::file-selector-button {
+    background-color: rgba(65, 131, 113, 0.6);
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: color 0.4s, background-color 0.4s;
+}
+input::file-selector-button:hover {
+    background-color: rgba(180, 248, 141, 0.6);
+    color: black;
+}
+.download-btn{
+    box-sizing: border-box;
+    color: white;
+    background-color: rgba(114, 136, 130, 0.6);
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
