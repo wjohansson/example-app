@@ -12,9 +12,7 @@
         <h1>Image</h1>
         </div>
     <br>
-    <a href="/stored/{{$name}}" download class="download-btn">Download
-        <i class="fa fa-download"></i>
-    </a>
+    <a href="/stored/{{$name}}" download class="download-btn">Download</a>
     <br>
     <img src="/stored/{{$name}}" height="648px" class="center">
     <br>
