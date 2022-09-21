@@ -16,6 +16,10 @@
         @csrf
         <input type="file" name="file"><br>
 
+        <p><strong>(Optional) New name of the image:</strong></p>
+
+        <input type="text" name="imgname" id="imgname" class="text">
+
         <p><strong>Position of the image to keep:</strong></p>
 
         <select id="fitlocation" name="fitlocation">

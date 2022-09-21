@@ -104,10 +104,14 @@ class UploadController extends Controller
         }
         $image->insert($waterMarkUrl, $wmlocation, 10, 10);
 
+        if($_POST['imgname'] == true)
+        {
+            $name = $_POST['imgname'];
+        }
+        
         $imgpath = public_path('stored/'.$name);
         $image->save($imgpath);
         
         return view('display',['name'=>$name]);
     }
 }
-

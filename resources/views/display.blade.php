@@ -10,12 +10,16 @@
 <body>
     <div class="header">
         <h1>Image</h1>
+    </div>
+    <br>
+    <div class="container">
+        <img src="/stored/{{$name}}" height="648px" class="center">
+        <div class="middle">
+            <a href="/stored/{{$name}}" download class="download-btn">Download</a>
         </div>
-    <br>
-    <a href="/stored/{{$name}}" download class="download-btn">Download</a>
-    <br>
-    <img src="/stored/{{$name}}" height="648px" class="center">
-    <br>
+    </div>   
+    <p class="downloaddisp"><strong>Hover image to download</strong></p>
+    <br><br>
     <form method = "POST">
         <button onclick=history.back() class="button">Go Back</button>
     </form>
