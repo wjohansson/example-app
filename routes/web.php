@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 Route::get("/upload", [UploadController::class, "create"]);
 Route::post("/upload", [UploadController::class, "store"]);
+
+Route::post("/photos", [UploadController::class, "apiStore"]); 
