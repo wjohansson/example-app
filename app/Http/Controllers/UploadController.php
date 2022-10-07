@@ -258,8 +258,6 @@ class UploadController extends Controller
 
         $name = $photo->getClientOriginalName();
 
-        $logo_size = $width/12;
-
         //tar bort eventuella decimaltecken på variabler som ska vara int
         $width = (int) $width;
         $height = (int) $height;
@@ -267,6 +265,7 @@ class UploadController extends Controller
         $text_box_width = (int) $text_box_width;
         $brighten_darken = (int) $brighten_darken;
         
+        $logo_size = (int) ($width / 12);
 
         $image->fit($width, $height);
         
@@ -284,7 +283,7 @@ class UploadController extends Controller
             $constraint->aspectRatio();
         });
 
-        $logo_padding = $width/100;
+        $logo_padding = (int) ($width / 100);
         $image->insert($logo, $logo_position, $logo_padding, $logo_padding); //lägger in den omskalade loggan på rätt plats på bilden
 
         //här börjar skapandet och redigeringen av textrutan och texten i den
@@ -302,14 +301,14 @@ class UploadController extends Controller
             $box->setFontColor(new Color(0, 0, 0));
         }
 
-        $text_box_padding = $width / 50;
+        $text_box_padding = (int) ($width / 50);
 
         if ($text_position_x === 'left')
         {
             $text_padding_x = $text_box_padding;
         } elseif ($text_position_x === 'center')
         {
-            $text_padding_x = ($width - $text_box_width) / 2;
+            $text_padding_x = (int) (($width - $text_box_width) / 2);
         } elseif ($text_position_x === 'right')
         {
             $text_padding_x = ($width - $text_box_width) - $text_box_padding;
